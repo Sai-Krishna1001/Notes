@@ -1,0 +1,201 @@
+SQL CONCEPTS
+=====================
+Basic SQL - SELECT, INSERT, UPDATE, DELETE, JOIN, aggregate functions, etc.
+
+Advanced SQL - Window functions, CTEs, dynamic SQL, recursive queries, pivoting, etc.
+
+Database Design - Normalization, indexing, keys, schema optimization, etc.
+
+Transactions - Committing or rolling back units of work, isolation levels, concurrency.
+
+Stored Procedures - Modular routines for reusable logic stored in the database.
+
+Triggers - Code automatically executed in response to database events.
+
+Views - Saved queries that act as virtual tables.
+
+User-Defined Functions - Custom reusable functions in the database.
+
+Cursors - Temporarily hold result sets that can be processed row by row.
+
+Security - User permissions, roles, access control, encryption, auditing.
+
+Performance Tuning - Query optimization, execution plans, profiling, caching.
+
+High Availability - Replication, clustering, failover, disaster recovery.
+
+Administrative - Backup, restore, upgrade, migration, monitoring.
+
+Connectivity - APIs, connection pooling, transactions, network configuration.
+
+Cloud Databases - AWS RDS, Azure SQL, Google Cloud SQL, utilization, scalability.
+
+============================================================================================
+MONGODB CONCEPTS
+=====================
+Documents - The basic data unit in MongoDB. Similar to JSON objects.
+
+Collections - Grouping of documents. Analogous to tables in relational databases.
+
+Databases - Contain collections. A single server can have multiple independent databases.
+
+CRUD Operations - Create, read, update, and delete documents.
+
+Query Language - Find, filter, sort, etc documents. Based on JSON queries and operators.
+
+Indexes - Improve query performance by indexing document fields.
+
+Aggregation - Analytical queries to process data and return aggregated results.
+
+Replication -copies data to multiple servers for redundancy and high availability.
+
+Sharding - Scales horizontally by partitioning data across clusters.
+
+Transactions - Ability to execute operations in isolation and atomicity.
+
+Schema Design - Structure documents for optimal queries and performance. Avoid over-nesting.
+
+Data Modeling - Design database in a MongoDB idiomatic way, denormalized.
+
+MongoDB Shell - Interactive JS interface to connect and work with MongoDB.
+
+Drivers - Client libraries for different languages to connect from applications.
+
+Security - Authentication, authorization, encryption to secure MongoDB.
+
+Administration - Installation, configuration, performance tuning, backup, etc.
+
+Cloud Deployments - MongoDB Atlas, AWS, Azure, etc.
+
+Migration from SQL - Strategies to migrate from relational databases.
+
+
+================================================================================================
+JAVA CORE CONCEPTS
+===================
+JAVA 8 FEATURES
+================
+Lambda expressions - Added support for writing functional style code blocks using lambda syntax. Allows passing functions as method arguments.
+Method references - Referencing existing methods directly instead of defining lambda expressions. Useful for passing existing methods to lambda accepting methods.
+Functional interfaces - Introduced new functional interfaces like Function, Consumer, Predicate etc to support lambda expressions.
+Stream API - New stream API to facilitate pipeline processing of data in a declarative manner. Supports aggregate operations on stream elements.
+Default methods - Interface can now contain default method implementations. Allows adding new methods without breaking existing implementations.
+Optional - New optional class to represent optional values instead of null. Helps avoid NullPointerException.
+Nashorn JavaScript Engine - New JavaScript engine to allow embedding and executing JavaScript code within Java.
+Date and Time API - New Date Time API inspired by Joda-Time. Immutable and thread-safe.
+Base64 - New java.util.Base64 class for Base64 encoding and decoding.
+Parallel arrays - Parallel sorting, searching and streaming of arrays now supported.
+Type annotations - Support for annotations on generics, lambda parameters, casts. Improved analysis by static analysis tools.
+Concurrency updates - Classes in java.util.concurrent updated with new methods. Improved performance of ConcurrentHashMap.
+
+So in summary, the focus should be on lambdas, streams, functional interfaces, date time API, optional, Nashorn engine and concurrency utilities.
+
+JAVA 9 FEATURES (2017)
+================
+Jigsaw Project - Modularization of the JDK into logical modules
+Factory methods for immutable List, Set, Map
+Private interface methods
+Process API improvements
+Try-with-resources enhancement
+@Deprecated annotation enhancement
+
+JAVA 10 FEATURES (2018)
+================
+Local-variable type inference (var keyword)
+Garbage Collector interface
+Parallel full GC for G1
+Heap allocation on alternative memory devices
+Experimental AOT compiler
+
+JAVA 11 FEATURES (2018)
+===============
+Local-variable syntax for lambda parameters
+HTTP Client API (standard HTTP client)
+String methods (lines, strip, stripLeading, stripTrailing, isBlank)
+Nested based access control
+Flight recorder
+Epsilon GC (no-op garbage collector)
+
+JAVA 12 FEATURES (2019)
+===============
+Shenandoah GC
+Microbenchmark Suite
+Switch Expressions
+Compact Number Formatting
+Abortable Mixed Collections for G1
+JVM Constants API
+
+
+JAVA 13 FEATURES (2019)
+================
+Switch Expressions
+Text Blocks
+Reimplement the Legacy Socket API
+Dynamic CDS Archives
+
+JAVA 14 FEATURES (2020)
+================
+Records
+Pattern Matching for instanceof
+Helpful NullPointerExceptions
+Switch Expressions
+Packaging Tool (jpackage)
+
+JAVA 15 FEATURES (2020)
+================
+Sealed Classes
+Hidden Classes
+Text Blocks
+Removal of Nashorn JavaScript Engine
+
+JAVA 16 FEATURES (2021)
+================
+Records
+Sealed Classes
+Pattern Matching for instanceof
+Packaging Tool Improvements
+Warnings for Value-Based Classes
+
+JAVA 17 FEATURES (2021)
+================
+Sealed Classes
+Pattern Matching for switch
+Remove the Nashorn JavaScript Engine
+Deprecate the Applet API for Removal
+Unicode Language-Tag Extensions
+
+JAVA 18 FEATURES (2022)
+================
+Simple Web Server
+Vector API (Incubator)
+Simple Web Server
+Disable and Deprecate Biased Locking
+
+============================================================================================
+DESIGN PATTERNS CONCEPTS
+===============================
+Abstraction - Abstracting complex systems to simplify design. Using interfaces and abstract classes to define abstraction.
+
+Encapsulation - Hiding internal implementation details from other objects. Using access modifiers like private and protected to control visibility.
+
+Inheritance - Creating new classes from existing classes. Subclass inherits attributes and behaviors from parent class.
+
+Polymorphism - Ability of objects to take on multiple forms. Using virtual methods that can be overridden by subclasses.
+
+Coupling - Level of interdependence between classes and objects. Goal is to reduce coupling as much as possible.
+
+Cohesion - Degree to which class elements belong together. High cohesion indicates good class subdivision.
+
+Single Responsibility Principle - Class should only have one reason to change. Separate responsibilities into different classes.
+
+Open/Closed Principle - Classes should be open for extension but closed for modification. Use inheritance and abstraction.
+
+Liskov Substitution Principle - Derived classes should be substitutable for their base classes. Follow inheritance rules.
+
+Interface Segregation Principle - Many client-specific interfaces better than one general interface. Split into smaller interfaces.
+
+Dependency Inversion - Depend on abstractions rather than concretions. Introduce abstractions that can be mocked/stubbed.
+
+Patterns like Factory, Singleton, Facade, Observer, Decorator, Proxy, Composite etc.
+
+=============================================================================================
