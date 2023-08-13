@@ -199,3 +199,33 @@ Dependency Inversion - Depend on abstractions rather than concretions. Introduce
 Patterns like Factory, Singleton, Facade, Observer, Decorator, Proxy, Composite etc.
 
 =============================================================================================
+HIBERNATE CONCEPTS
+======================
+Entity - This represents a table in the database. An entity class is mapped to a database table.
+
+Mapping file - This XML file contains the mapping between the entity class and the database table. It defines which class fields map to which table columns.
+
+SessionFactory - This is the factory class through which hibernate sessions can be obtained. It reads the mapping files and builds the mapping metadata.
+
+Session - This interface represents a conversation between the application and the database. It is a short-lived object used to get a physical connection with a database.
+
+Transaction - This represents a unit of work with the database. Transactions in hibernate encapsulate the save, update and delete operations.
+
+Persistent and Transient states - Persistent represents an object that is associated with a session and has an identifier. Transient means it has no persistent representation in the database.
+
+Lazy loading - Objects are loaded on demand, only when they are accessed. This improves performance by avoiding unnecessary queries.
+
+Eager loading - Objects are loaded along with parent objects, using joins when getting the parent. This avoids n+1 queries problem.
+
+Caching - Caching frequently accessed data to improve performance. First and second level caches are used.
+
+Inheritance mapping - Mapping subclasses to tables using strategies like joined subclass, table per class etc.
+
+Association mapping - Mapping one-to-one, one-to-many and many-to-many relationships between entities.
+
+HQL - Hibernate Query Language, similar to SQL, to perform queries on objects.
+
+Criteria API - Programmatic query building API alternative to HQL.
+
+==================================================================================================
+====================================================================================================
