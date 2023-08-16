@@ -1,0 +1,1 @@
+--> The staging area is specific to Git and is used to manage changes before they are committed to the repository.

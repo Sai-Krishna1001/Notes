@@ -1,0 +1,21 @@
+Here is a summary of important SQL concepts worth learning:
+
+Basic SQL - SELECT, INSERT, UPDATE, DELETE, JOIN, aggregate functions, etc.
+Advanced SQL - Window functions, CTEs, dynamic SQL, recursive queries, pivoting, etc.
+Database Design - Normalization, indexing, keys, schema optimization, etc.
+Transactions - Committing or rolling back units of work, isolation levels, concurrency.
+Stored Procedures - Modular routines for reusable logic stored in the database.
+Triggers - Code automatically executed in response to database events.
+Views - Saved queries that act as virtual tables.
+User-Defined Functions - Custom reusable functions in the database.
+Cursors - Temporarily hold result sets that can be processed row by row.
+Security - User permissions, roles, access control, encryption, auditing.
+Performance Tuning - Query optimization, execution plans, profiling, caching.
+High Availability - Replication, clustering, failover, disaster recovery.
+Administrative - Backup, restore, upgrade, migration, monitoring.
+Connectivity - APIs, connection pooling, transactions, network configuration.
+Cloud Databases - AWS RDS, Azure SQL, Google Cloud SQL, utilization, scalability.
+So in summary - SQL syntax, database design, transactions, programmability, performance, HA, admin, connectivity, and cloud databases are key learning areas.
+
+
+--> hello hello hello

@@ -1,0 +1,23 @@
+--> Node is NOT a Framework
+--> Node is not a programming language
+--> It's an runtime environment used for executing Javascript code
+--> We often use node to build Back-end services like API's
+
+--> Features of Node JS
+	-->Highly scalable
+	-->Data-intensive and real-time apps
+--> Special Features in Node JS
+	-->Node is easy to get started
+	-->Superfast & highly scalable services
+	-->Large ecosystem of open source librarys
+	-->JavaScript Everywhere
+
+--> NodeJs is Asynchronous(Non-Blocking) by nature
+
+==================Things to work on==================
+-->Http Module
+-->File System Module
+-->URL Module
+-->Node JS NPM
+-->Node JS Email
+=======================================================

@@ -1,0 +1,38 @@
+What is JDBC?
+JDBC stands for Java Database Connectivity, which is a standard API for connecting Java applications to databases.
+
+What are the different types of JDBC drivers?
+There are four types of JDBC drivers:
+
+Type 1: JDBC-ODBC bridge driver
+Type 2: Native-API/partly Java driver
+Type 3: Network-protocol/all-Java driver
+Type 4: Native-protocol/all-Java driver
+What is the role of a DriverManager class in JDBC?
+The DriverManager class is responsible for managing a list of database drivers. It acts as an intermediary between the application and the drivers, and selects the appropriate driver for a given database.
+
+What are the steps to establish a connection to a database using JDBC?
+The steps to establish a connection to a database using JDBC are as follows:
+
+Load the driver class using Class.forName()
+Create a Connection object using DriverManager.getConnection()
+Create a Statement object using the Connection.createStatement() method
+Execute a SQL query using the Statement.executeQuery() method
+Process the results using ResultSet
+What is a PreparedStatement in JDBC?
+PreparedStatement is a precompiled SQL statement that is used to execute parameterized queries. It allows you to specify parameters in a query, which can be later set at runtime.
+
+What is the difference between Statement and PreparedStatement in JDBC?
+The main difference between Statement and PreparedStatement is that PreparedStatement is precompiled and can accept parameters, while Statement is not precompiled and cannot accept parameters.
+
+What is a ResultSet in JDBC?
+A ResultSet is an object that represents the data returned from a database query. It provides methods for retrieving data from the result set.
+
+What is a Batch in JDBC?
+A Batch is a group of SQL statements that are executed together as a single unit. It is used to improve performance by reducing the number of round trips between the application and the database.
+
+How can you handle exceptions in JDBC?
+JDBC throws SQLException, which is a checked exception. To handle exceptions, you can use try-catch blocks or throw the exception to the calling method.
+
+How do you close a JDBC connection?
+You can close a JDBC connection by calling the Connection.close() method. It is important to close the connection to release resources and avoid memory leaks.

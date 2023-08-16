@@ -1,0 +1,8 @@
+Java Notes
+====================================================
+static/final/static final
+==================================
+"static" is used to define class-level variables and methods,
+ "final" is used to define constants, and 
+"static final" is used to define class-level constants.
+===================================================
