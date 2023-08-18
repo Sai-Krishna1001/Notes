@@ -1,0 +1,31 @@
+CONCEPTS
+=================
+Project Object Model (POM) - XML file that contains project configuration details like dependencies, build settings etc.
+
+Dependencies - Manage external libraries needed by your project declared in pom.xml.
+
+Repositories - Remote repositories where Maven looks for dependencies. Can be public like Maven Central or private.
+
+Build Lifecycles - Standard lifecycles like clean, compile, test, package defined by Maven.
+
+Build Profiles - Used to customize builds for different environments like dev, test, prod.
+
+Plugins - Extend Maven functionality by executing custom goals during the build.
+
+Goal - Specific task that contributes to the build lifecycle like compile, test. Defined in plugins.
+
+Phase - Major part of the build lifecycle like validate, compile, test, etc.
+
+Convention over Configuration - Standard project structure and configurations followed by Maven.
+
+Coordinates - GroupId, artifactId and version used to uniquely identify dependencies.
+
+Inheritance - Parent pom inheritance to eliminate duplicate configs.
+
+Aggregation - Building multi-module projects by aggregating modules.
+
+-SNAPSHOT - Versions ending with -SNAPSHOT are under development.
+
+=================================================================================
+
+-->

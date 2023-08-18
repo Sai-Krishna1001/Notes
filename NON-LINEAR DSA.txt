@@ -1,0 +1,313 @@
+
+
+==========================================================================================
+
+Trees
+=============
+-->1.Learn basic tree data structure:
+	Terminology - root, parent, child, leaf etc.
+	Types - binary, ternary, m-ary
+	Traversals - preorder, inorder, postorder, level order
+	Representations - array, pointers, linked structure
+-->2.Study Binary Trees:
+	Construction from arrays and linked lists
+	Traversals - recursive and iterative
+	Linked vs sequential representation
+	Threaded binary trees
+-->3.Learn Binary Search Trees (BST):
+	Insertion and deletion algorithms
+	Searching for a key
+	Time complexity of operations
+	Height and depth of BST
+-->4.Understand Balanced Binary Trees:
+	Need for balancing BST
+	Rotation operations
+	AVL trees, red-black trees
+	Balance factor and self-balancing
+-->Study Heaps using Binary Trees:
+	Min-heap and max-heap
+	Building a heap - heapify algorithm
+	Insert and extract min/max operations
+	Heap sort algorithm
+-->Learn Tries (Prefix Trees):
+	Building a trie
+	Insertion and deletion of keys
+	Search and traversal of trie
+-->Analyze different applications:
+	Priority queues using Heaps
+	Sorting with Heapsort
+	String searching using Tries
+	IP routing using Prefix trees
+
+===========================================================================
+KEY POINTS OF TREES
+=======================
+--> A tree is a hierarchical data structure that consists of nodes connected by edges.
+--> The topmost node is called the root. Nodes further down are called child nodes.
+--> Nodes with no children are called leaf nodes. Nodes with same parent are called siblings.
+--> Height of a tree is the number of edges from root to the deepest leaf.
+--> Depth of a node is the number of edges from that node to the root.
+--> Trees where nodes can have a fixed number of children are called m-ary trees (binary for 2, ternary for 3 etc).
+--> Binary Search Trees (BSTs) are binary trees 
+where left child <= parent < right child. Allows fast search.
+--> Balanced BSTs like AVL and Red-Black ensure worst case O(logN) operation by balancing height.
+--> Heaps are complete binary trees that satisfy the heap property - max/min value at root. Allow fast inserts and deletes.
+--> Tries are special trees (prefix trees) used to store associative data and retrieve keys with a given prefix.
+--> Spanning trees are subgraphs of graphs that connect all nodes without cycles. Help represent connected graphs.
+
+--> Common operations include traversal(pre/in/post order), insertion, deletion, search. Take O(logN) for balanced trees.
+
+========================DIFFERENT TYPES OF TREES========================
+BINARY TREE : 
+============
+--> Each node has up to 2 child nodes.
+--> used to implement binary search trees and heaps.
+--> Height = max depth of tree
+--> Size = total number of nodes
+
+            A
+           / \
+          B   C
+         / \
+        D   E
+
+BINARY SEARCH TREE (BST):
+============================
+--> Left child < Parent < Right child
+--> Allows fast search, insertion, deletion in O(log N) time.
+--> Height balance is important for performance.
+--> Usage: Fast searching, sorting.
+
+              15
+           /      \
+         10        20
+       /  \      /  \
+      8   12    16  25
+
+SPLAY TREE :
+============= 
+-->Self adjusting BST where accessed key is moved to root
+--> Provides O(log n) amortized time for operations
+--> Used in caches, memory allocation, routers
+
+      20
+     /
+   10
+  /
+ 5
+
+AVL TREE : 
+============
+--> Self balancing BST where node heights differ by at most 1.
+--> Rebalances using rotations during insert/delete.
+--> Height is always O(log n) - balanced
+--> Usage: Database indexing, routers.
+
+             20
+           /   \
+         15     25
+        /  \
+       10   16
+
+RED-BLACK TREE :
+==================== 
+-->Self balancing BST with colors representing balance.
+--> Complex left-leaning red-black balancing.
+--> Height guaranteed to be O(log n)
+--> Usage: Maps/sets in languages like C++.
+
+
+HEAP :
+=======
+--> Complete binary tree with heap ordering property.
+--> Max heap - Parent > Child nodes
+--> Min heap - Parent < Child nodes
+--> Used to implement priority queues.
+--> Operations - peek, insert, extract in O(log n).
+
+         40
+       /   \
+     35     25
+    /  \   / \
+  30   32 20 22
+
+TRIE (Prefix Tree):
+====================
+--> Stores words by prefixes for efficient search and autocomplete.
+--> Useful for dictionaries, spell-check etc.
+--> Operations - search, insert, delete in O(length of word).
+
+    root
+   /   \
+  d     t 
+ /     / \
+o     h   e
+        /
+       n
+
+BINOMIAL TREE:
+================
+--> Recursively defined tree structure
+--> Order k tree has height k
+--> Root has k children, each child is order k-1 tree
+
+        k=3
+     / / |\ 
+    2 1 0 0
+
+--> Heap property: node >= children keys
+--> Merging two same order trees takes O(1)
+--> Binomial heap = set of binomial trees
+--> Insert and merge are O(1)
+--> findMin and extractMin ar O(logN)
+
+Usage:	--> Efficient priority queues
+	--> Useful in parallel/ distributed systems
+	--> Graph alorithms like Prim's MST
+
+Calculations: 	--> Tree height = order k
+		--> Number of nodes = 2^k
+		--> Minimum nodes at height h = (h+1) (h belongs to [0,k])
+
+
+===========================================================================
+
+=======================DIFFERENT TYPES OF BINARY TREES====================
+
+FULL BINARY TREE
+================
+--> Every node has 0 or 2 children (no nodes with 1 child)
+--> Number of leaf nodes = number of internal nodes + 1
+--> Number of null links = number of nodes + 1
+--> Used where complete data segmentation is needed
+
+
+           O
+         /   \
+       O       O  
+     /  \       \
+    O    O       O
+
+COMPLETE BINARY TREE
+==========================
+--> All levels are filled except last
+--> Last level filled left to right
+--> Height = O(log n)
+--> Useful for heaps
+
+        O
+       / \
+      O   O 
+     / \ /
+    O  OO
+
+PERFECT BINARY TREE
+=======================
+--> All internal nodes have 2 children
+--> All leaf nodes at same level
+--> Height = log2(n+1) - 1
+--> Used in binary search trees
+
+          O
+       /     \
+     O         O
+    / \       /  \
+   O   O     O    O
+
+BALANCED BINARY TREE 
+======================
+--> Height of subtrees differ by atmost 1
+--> Ensures O(log n) time
+--> Examples: AVL, Red-Black trees.
+--> Used in databases, routers, FS
+
+           O
+         /   \
+       O      O  
+      / \     
+    O   O
+
+DEGENERATE OR PATHOLOGICAL TREE
+==================================
+
+--> Every internal node has one child
+--> Performance same as linked list
+--> Height = n-1
+--> Used in hashmap chaining
+
+   O
+    \
+     O
+      \
+       O
+        \ 
+         O
+
+
+===========================================================================
+
+======================DIFFERENT TYPES OF HEAPS============================
+
+1.BINARY HEAP
+===============
+--> Can be maxheap or minheap
+--> Complete binary tree
+--> Maxheap - parent >= children
+--> Minheap - parent <= children
+--> Used to implement priority queues
+--> Operation - peek, insert, extract in O(log n)
+	
+1.1.MAX HEAP
+========
+--> The key of parent node is greater than or equal to keys of child.
+--> The root node contains the maximum value.
+
+         16
+       /   \ 
+     14     10
+    /  \   /  \
+   8    7 5    6
+
+1.2.MIN HEAP
+========
+--> The key of parent node is less than or equal to keys of child.
+--> The root node contains the minimum value.
+
+          5
+       /     \
+     10      14
+    /  \    /   \ 
+   12   15 20   16
+
+2. BINOMIAL HEAP
+==================
+--> Implemented using binomial trees
+--> Consists of multiple binomial trees merged together
+--> More efficient merging compared to binary heap
+--> Used for priority queues in parallel/distributed systems
+
+    0
+  / | \
+1  3  7
+
+FIBONACCI HEAP
+=================
+--> Composed of trees with degree constraints
+--> Supports merge in O(1), insert in O(1)
+--> Extensively pointer based
+--> Used in Dijkstra's algorithm
+--> Used in routing algorithms, Prim's algorithm
+
+  2
+ / \
+3   5
+
+LEFTIST HEAP
+===================
+--> BST  satisfying heap order property 
+--> Left children are guaranteed to be greater than right
+--> Supports efficient merges
+--> Used in algorithm implementations
+
+
+===========================================================================

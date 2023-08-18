@@ -1,0 +1,78 @@
+Bit Manipulation
+==================
+-->Bit masks - Setting, clearing, checking bits in a number. Detecting odd/even, get/set subsets, etc.
+-->Bit shifts - Arithmetic shifts, logical shifts. Fast multiplication/division by powers of 2.
+-->Bitwise operations - AND, OR, XOR. Combining and toggling bits.
+-->Counting bits - Brian Kernighan's algorithm, lookup tables.
+-->Two's complement - Negating numbers, overflow detection.
+-->Bit tricks - Get/set/update subset bits, isolate subsets, swap values, etc.
+-->Bitsets - Dynamic bit arrays to store flags and sets.
+-->Clearing lowest/highest set bits - To get floor/ceiling values.
+-->Bit-wise sorting - Like radix sort by processing bits.
+-->Binary representations - Convert to/from binary strings.
+-->Crypto primitives - Works heavily with bit op tricks.
+============================================================================================
+Sorting Algorithms
+=======================
+Sorting Algorithm	Time Complexity		Space Complexity
+
+Bubble Sort		O(n^2)			O(1)
+Insertion Sort		O(n^2)			O(1)
+Selection Sort		O(n^2)			O(1)
+
+Merge Sort		O(n log n)		O(n)
+Quick Sort		O(n log n)		O(log n)
+Heap Sort		O(n log n)		O(1)
+
+Counting Sort		O(n+k)			O(n+k)
+Radix Sort		O(n*k)			O(n+k)
+Bucket Sort		O(n+k)			O(n)
+
+Where:
+n is the number of elements to sort
+k is the range of input elements
+
+Observations:
+Bubble, Insertion and Selection sorts have quadratic time complexity O(n^2).
+Merge, Quick and Heap sorts have optimal O(n log n) time complexity.
+Counting, Radix and Bucket sorts run linear O(n) time given fixed key range.
+Insertion, Selection and Heap sorts have constant O(1) space usage.
+Merge and Quick sorts use O(n) auxiliary space.
+Radix and Counting sorts use O(n+k) space based on input size and range.
+
+
+For most cases, Quick Sort is the best sorting algorithm in terms of time complexity O(n log n) and space complexity O(log n) on average.
+For large datasets that fit in memory, Merge Sort is also a good option with O(n log n) time and O(n) space.
+For sorting small arrays, Insertion Sort and Selection Sort are good with O(n^2) time but O(1) space.
+=======================================================================================================
+
+Two Pointers Algorithm Problems
+=================================
+1-->Finding a pair in a sorted array with a given sum - We discussed this already. Key is using left and right pointers.
+2-->Removing duplicates from a sorted array - Use two pointers, one for next unique element and one traversing.
+3-->Reverse a linked list - Use two pointers to track current and previous nodes.
+4-->Merge two sorted arrays into one - Use a pointer into each array to traverse and compare.
+5-->Trapping rainwater between buildings - Use left and right pointers to track max heights.
+6-->3Sum problem - Fix one pointer and use two more like two sum.
+7-->Longest substring without repeating characters - Use two pointers defining window of unique chars.
+8-->Container with most water - Use left and right pointer to calculate area.
+9-->Valid palindrome linked list - Use two pointers moving inwards to compare elements.
+10-->Rotate a linked list by k positions - Use two pointers to connect ends.
+
+
+Searching Algorithms
+=======================================================
+ Binary Search Problems
+=========================
+1-->Basic binary search - Given a sorted array and key, find index of key. Understand mid calculation and updating left/right.
+2-->First occurrence of key - Keep searching left after finding key to get first index.
+3-->Last occurrence of key - Keep searching right after finding key.
+4-->Next letter - Given letters in sorted order, find next letter missing in sequence.
+5-->Search in rotated sorted array - Modified checks to handle pivot point.
+6-->Peak element - Binary search on ascent/descent to find max/min.
+7-->Search in nearly sorted array - Search nearby mid index if key not found.
+8-->Count occurrences - Modified binary search to count instances of key.
+9-->Search in infinite array - Modify bounds, double each iteration.
+10-->Find position to insert - Return left index when key < arr[mid].
+11-->Median of two sorted arrays - Apply binary search on range of medians.
+=======================================================================================
