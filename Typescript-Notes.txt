@@ -8,3 +8,4 @@ Q. What are issues in javascript?
 --> Direct execution(No compilation)
 
 --> The above all stmts are the advantages of the typescript
+--> Compilation first then execution in typescript
