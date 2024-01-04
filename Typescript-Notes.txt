@@ -1,0 +1,10 @@
+Typescript
+===============
+Q. What are issues in javascript?
+--> Type safety
+--> Lack of syntax checking
+--> Not readable & maintainable for large applications
+--> Missing Object Oriented Principles
+--> Direct execution(No compilation)
+
+--> The above all stmts are the advantages of the typescript
