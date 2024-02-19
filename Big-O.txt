@@ -1,0 +1,62 @@
+Q. Why do we use Big-O?
+--> It's a framework we can use to judge which solutions are "better" than others.
+
+Q. what makes a solution "better"?
+--> We prefer solutions that use the least resources
+ 	--> time(duration)
+	--> space(memory)
+
+Problem:
+--------
+How do we control for differences in computer hardware and environment?
+
+Solution:
+--------
+--> Big O notation can objectively describe the efficiency of code without the use of concrete units.
+--> Focus on how the time and space requirements scale.
+--> Prepare for the worst case scenario
+
+--------------------
+--> Product Rule: If the Big-O is the product of multiple terms, drop the constant terms.
+
+--> Sum Rule: If the Big-O is the sum of multiple terms, only keeep the largest term, drop the rest.
+
+Analyzing Stack Space for Recursive Code:
+-----------------------------------------
+--> Our space complexity should consider the space taken by recursive calls on the call stack.
+--> The space required on the call stack is the maximum depth.
+
+--> We use Big-O to compare solutions by how they scale with the size of the input.
+
+Constant-O(1):
+--------------
+--> The number of steps does not depend on the input size
+
+Logarithmic-O(log(n)):
+-----------------------
+--> The number of steps can be expressed as a logarithm on the input size
+--> A log is the opposite of an exponent
+--> An exponent is a repeated multiplication, a log is a repeated division
+--> If 2^5 =32, then log2(32) = 5
+
+LogLinear-O(n*log(n)):
+------------
+--> Has linear behavior nested in log steps
+--> Bigger than O(n) but smaller than O(n^2)
+
+Polynomial-O(n^c):
+------------------
+--> n is the size of the input, c is some constant
+--> includes O(n^2) quadratic, O(n^3) cubic, etc.
+
+Exponential-O(c^n):
+--------------------
+--> n is the size of the input, c is some constant
+--> includes O(2^n), O(3^n), etc.
+
+Factorial-O(n!):
+----------------
+--> n! = n*(n-1)*(n-2)*(n-3)...2*1
+
+
+
